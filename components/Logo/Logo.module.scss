@@ -1,0 +1,12 @@
+.logo {
+  a {
+    text-transform: capitalize;
+    color: hsl(var(--clr-accent));
+    font-size: var(--fs-700);
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 3px solid hsl(var(--clr-white) / 0.25);
+    }
+  }
+}

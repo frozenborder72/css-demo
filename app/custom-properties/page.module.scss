@@ -1,0 +1,18 @@
+.card-container {
+  display: grid;
+  place-content: center;
+  gap: 5rem;
+
+  div {
+    width: 30rem;
+    padding: 3rem;
+    color: var(--card-fg, hsl(var(--clr-accent)));
+    background-color: var(--card-bg, hsl(var(--clr-white)));
+    border: 2px solid var(--card-fg, hsl(var(--clr-accent)));
+  }
+
+  div[data-variant="inverted"] {
+    --card-fg: hsl(var(--clr-white));
+    --card-bg: hsl(var(--clr-accent));
+  }
+}

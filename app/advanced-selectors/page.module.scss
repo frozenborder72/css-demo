@@ -1,0 +1,52 @@
+.lobotomized-owl {
+  background-color: var(--clr-white);
+  border: 3px solid white;
+  padding: 2rem;
+  margin-bottom: 3rem;
+
+  // p {
+  //   margin-bottom: 1rem;
+  // }
+
+  // p:last-child {
+  //   margin-bottom: 0;
+  // }
+
+  // * + * {
+  //   margin-top: 1rem;
+  // }
+
+  display: grid;
+  gap: 1.5rem;
+}
+
+.is {
+  > * + * {
+    margin-top: 1rem;
+  }
+
+  p:has(span) {
+    width: 35ch;
+  }
+
+  // em,
+  // span,
+  // .asdf {
+  //   background-color: pink;
+  // }
+
+  // :is(em, span, .asdf) {
+  //   background-color: lightcyan;
+  // }
+
+  :where(em, span, .asdf) {
+    background-color: lightcyan;
+    color: black;
+  }
+
+  p:not(:first-child) {
+    font-size: var(--fs-700);
+  }
+
+  margin-bottom: 15rem;
+}

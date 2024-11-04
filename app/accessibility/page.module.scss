@@ -1,0 +1,40 @@
+h2.animate {
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.9);
+  }
+
+  25% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.aria-selected {
+  margin-top: 5rem;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  [aria-selected="false"] {
+    --btn-bg: hsl(var(--clr-white) / 0.88);
+    --btn-fg: hsl(var(--clr-accent));
+  }
+}

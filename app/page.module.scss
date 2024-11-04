@@ -1,0 +1,19 @@
+.home-navigation {
+  text-align: center;
+
+  > * + * {
+    margin-top: 7rem;
+  }
+
+  a {
+    font-size: var(--fs-700);
+    font-weight: 700;
+    color: hsl(var(--clr-accent));
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: hsl(var(--clr-accent) / 0.8);
+    border-bottom: 3px solid;
+  }
+}
